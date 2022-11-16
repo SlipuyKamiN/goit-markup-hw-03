@@ -39,6 +39,27 @@ body {
 .address:focus {
   color: var(--accent-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* Налаштування контейнера */
+.container {
+  outline: 1px solid red;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding-bottom: 94px;
+}
 /* Header */
 .logo {
   color: var(--black-color);
@@ -88,6 +109,7 @@ body {
 /* Hero */
 .hero {
   background-color: var(--hero-footer-color--);
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -97,8 +119,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0 0 30px 0;
 }
 .btn {
+  display: inline-block;
   cursor: pointer;
   font-family: Roboto, sans-serif;
 }
@@ -109,6 +133,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 .btn.primary:hover,
 .btn.primary:focus {
@@ -128,7 +153,7 @@ body {
   line-height: 1.71;
   /* успадковано від Body */
 }
-.team-section {
+.team {
   background-color: var(--background-secondary-color);
 }
 .section-list-title {
@@ -156,6 +181,9 @@ body {
 .btn-list,
 .project-list {
   list-style-type: none;
+}
+.btn-list {
+  margin-bottom: 34px;
 }
 .btn.secondary {
   background-color: var(--background-secondary-color);
