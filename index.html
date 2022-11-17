@@ -4,31 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>WebStudio</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
           <a href="./index.html" class="logo"><span class="logo part">Web</span>Studio</a>
           <ul class="nav-list">
-            <li><a class="nav-list-item current" href="./index.html">Студія</a></li>
-            <li><a class="nav-list-item" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="nav-list-item" href="">Контакти</a></li>
+            <li class="link"><a class="nav-list-link current" href="./index.html">Студія</a></li>
+            <li class="link"><a class="nav-list-link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="link"><a class="nav-list-link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts-list">
-          <li>
+          <li class="contact">
             <a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a>
           </li>
-          <li><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a></li>
+          <li class="contact">
+            <a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -39,26 +45,29 @@
         <button type="button" class="btn primary">Замовити послугу</button>
       </section>
       <!-- Перелік рішень -->
-      <section class="section">
+      <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Перелік рішень</h2>
           <ul class="section-list">
+            <li class="item">
               <h3 class="section-list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="item-desc">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="section-list-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="item-desc">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="section-list-title">ПЛАНУВАННЯ</h3>
-              <p class="item-desc">Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="item-desc">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="section-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="item-desc">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -72,9 +81,15 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="section-list">
-            <li><img src="./images/box-1.jpg" alt="Keyboard typing" width="370" /></li>
-            <li><img src="./images/box-2.jpg" alt="Smartphone look" width="370" /></li>
-            <li><img src="./images/box-3.jpg" alt="Color selection" width="370" /></li>
+            <li class="img-list">
+              <img src="./images/box-1.jpg" alt="Keyboard typing" width="370" />
+            </li>
+            <li class="img-list">
+              <img src="./images/box-2.jpg" alt="Smartphone look" width="370" />
+            </li>
+            <li class="img-list">
+              <img src="./images/box-3.jpg" alt="Color selection" width="370" />
+            </li>
           </ul>
         </div>
       </section>
@@ -111,7 +126,7 @@
       <div class="container">
         <a href="./index.html" class="logo foot"><span class="logo part">Web</span>Studio</a>
         <address>
-          <ul class="section-list">
+          <ul class="footer-list">
             <li>
               <a
                 href="https://goo.gl/maps/kWrGyEN4S8KAi9pg8"

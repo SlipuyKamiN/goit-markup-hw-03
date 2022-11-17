@@ -26,14 +26,15 @@ body {
 }
 .nav-list,
 .contacts-list,
-.section-list {
+.section-list,
+.footer-list {
   list-style-type: none;
 }
-.nav-list-item:hover,
+.nav-list-link:hover,
 .header-contacts:hover,
 .footer-contacts:hover,
 .address:hover,
-.nav-list-item:focus,
+.nav-list-link:focus,
 .header-contacts:focus,
 .footer-contacts:focus,
 .address:focus {
@@ -60,7 +61,14 @@ p {
 .section {
   padding-bottom: 94px;
 }
+.section.features {
+  padding-top: 94px;
+}
 /* Header */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   color: var(--black-color);
   font-family: Raleway, sans-serif;
@@ -73,16 +81,35 @@ p {
 .part {
   color: var(--accent-color);
 }
-.nav-list-item.current {
+
+.nav-list .link + .link {
+  margin-left: 50px;
+}
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-list-link.current {
   color: var(--accent-color);
 }
-.nav-list-item {
+.nav-list-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--text-primary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-list .contact + .contact {
+  margin-left: 40px;
 }
 .header-contacts {
   color: var(--text-p-color);
@@ -92,6 +119,7 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -140,6 +168,15 @@ p {
   background-color: var(--primary-btn-accent-color--);
 }
 /* Перелік рішень */
+.section-list {
+  display: flex;
+}
+.section-list .item {
+  width: 270px;
+}
+.section-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -153,6 +190,10 @@ p {
   line-height: 1.71;
   /* успадковано від Body */
 }
+/* Чим ми займаємося */
+.section-list .img-list:not(:last-child) {
+  margin-right: 30px;
+}
 .team {
   background-color: var(--background-secondary-color);
 }
@@ -165,8 +206,15 @@ p {
 }
 .section-card {
   background-color: var(--primary-white-color);
+  text-align: center;
+}
+.section-card:not(:last-child) {
+  margin-right: 30px;
 }
 .section-list-item {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -176,6 +224,7 @@ p {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 /* Стилі portfolio.html */
 .btn-list,
@@ -219,7 +268,14 @@ p {
 /* Footer */
 .footer {
   background-color: var(--hero-footer-color--);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+/* }
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
 .foot {
   color: var(--primary-white-color);
 }

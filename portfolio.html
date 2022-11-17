@@ -11,25 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
-        <nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
           <a href="./index.html" class="logo"><span class="logo part">Web</span>Studio</a>
           <ul class="nav-list">
-            <li><a class="nav-list-item" href="./index.html">Студія</a></li>
-            <li><a class="nav-list-item current" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="nav-list-item" href="">Контакти</a></li>
+            <li class="link"><a class="nav-list-link" href="./index.html">Студія</a></li>
+            <li class="link">
+              <a class="nav-list-link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="link"><a class="nav-list-link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts-list">
-          <li>
+          <li class="contact">
             <a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a>
           </li>
-          <li><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a></li>
+          <li class="contact">
+            <a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -127,7 +135,7 @@
       <div class="container">
         <a href="./index.html" class="logo foot"><span class="logo part">Web</span>Studio</a>
         <address>
-          <ul class="section-list">
+          <ul class="footer-list">
             <li>
               <a
                 href="https://goo.gl/maps/kWrGyEN4S8KAi9pg8"
