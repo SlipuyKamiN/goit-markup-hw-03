@@ -309,6 +309,10 @@ p {
   margin-right: 0;
 }
 
+.project-card:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
 .card-desc {
   padding: 20px 24px;
 }
