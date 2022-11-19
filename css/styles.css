@@ -55,6 +55,11 @@ p {
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
 /* Налаштування контейнера */
 .container {
   width: 1200px;
@@ -127,6 +132,9 @@ p {
 }
 
 .header-contacts {
+  display: block;
+  padding: 32px 0;
+
   color: var(--text-p-color);
   font-weight: 500;
   font-size: 14px;
@@ -151,6 +159,7 @@ p {
 /* Стилі index.html */
 /* Hero */
 .hero {
+  padding: 200px 0;
   background-color: var(--hero-footer-color--);
   text-align: center;
 }
@@ -248,9 +257,11 @@ p {
 .section-card:not(:last-child) {
   margin-right: 30px;
 }
+.team-card-desc {
+  padding: 30px 0;
+}
 
 .section-list-item {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -262,7 +273,6 @@ p {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 
 /* Стилі portfolio.html */
@@ -302,7 +312,6 @@ p {
 .project-card {
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .project-card:nth-child(3n) {
@@ -315,6 +324,10 @@ p {
 
 .card-desc {
   padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-link {
@@ -347,13 +360,13 @@ p {
 
 .foot {
   display: inline-block;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   color: var(--primary-white-color);
 }
 
 .footer-list .item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 }
 
 .address {
