@@ -164,6 +164,12 @@ img {
   text-align: center;
 }
 .hero-title {
+  max-width: 696px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -171,7 +177,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0 0 30px 0;
 }
 
 .btn {
@@ -335,6 +340,7 @@ img {
 }
 
 .project-title {
+  margin-bottom: 4px;
   color: var(--text-primary-color);
   font-weight: 700;
   font-size: 18px;
